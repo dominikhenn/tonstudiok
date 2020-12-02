@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Demo 1 - Slidertron</title>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slidertron-1.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="start-slider.css" />
+		<meta name="viewport" content="width=1200px" />
+	</head>
+	<body>
+    
+		
+		<div id="main">
+
+		<!-- ****************************************************************************************************************** -->
+
+			<div id="slider">
+				<div class="viewer">
+					<div class="reel">
+						<div class="slide">
+							<img src="images/2.jpg" alt="" />
+						</div>
+						<div class="slide">
+							<img src="images/1.jpg" alt="" />
+						</div>
+						<div class="slide">
+							<img src="images/3.jpg" alt="" />
+						</div>
+						<div class="slide">
+							<img src="images/4.jpg" alt="" />
+						</div>
+		
+					</div>
+				</div>
+			</div>
+			
+			<script type="text/javascript">
+				$('#slider').slidertron({
+					viewerSelector: '.viewer',
+					reelSelector: '.viewer .reel',
+					slidesSelector: '.viewer .reel .slide',
+					advanceDelay: 3000,
+					speed: 'slow'
+				});
+			</script>
+
+		<!-- ****************************************************************************************************************** -->
+
+		</div>
+		
+
+
+	</body>
+</html>

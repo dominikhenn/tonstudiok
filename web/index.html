@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--
+    Dopetrope 1.0 by HTML5 Up!
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <!--#set var="title" value="" -->
+    <!--#set var="description" value="Kompetent durch langjährige Erfahrung." -->
+    <!--#include virtual="/includes/head-title-meta.inc.html" -->
+    <!--#include virtual="/includes/head-resources.inc.html" -->
+    <!--#include virtual="/includes/head-css.inc.html" -->
+    <!--#include virtual="/includes/head-js.inc.html" -->
+</head>
+
+<body class="homepage">
+
+<!--#set var="active_page" value="home" -->
+<!--#include virtual="/includes/page-header.inc.html" -->
+
+<!-- Main Wrapper -->
+<div id="main-wrapper">
+    <div class="5grid-layout">
+        <div class="row">
+            <div class="12u">
+
+
+                <!-- Banner -->
+                <section id="banner">
+					<span class="image image-full">
+
+
+
+		<!-- ****************************************************************************************************************** -->
+
+			<div id="slider">
+                <div class="viewer">
+                    <div class="reel">
+                        <div class="slide">
+                            <img src="images/start2.jpg" alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img src="images/start1.jpg" alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img src="images/start3.jpg" alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img src="images/start4.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<script type="text/javascript">
+                $(document).ready(function () {
+                    _5grid.bind('ready', function () {
+                        if (!$('#slider').data('is-initialized')) {
+
+                            $('#slider .slide')
+                                    .width($('#slider .viewer').width());
+                            $('#slider .viewer')
+                                    .height($('#slider .slide img').height());
+
+                            $('#slider').data('is-initialized', 1).slidertron({
+                                viewerSelector: '.viewer',
+                                reelSelector: '.viewer .reel',
+                                slidesSelector: '.viewer .reel .slide',
+                                advanceDelay: 6000,
+                                speed: 'slow',
+                                seamlessWrap: false
+                            });
+                        }
+                    });
+                });
+            </script>
+
+                        <!-- ****************************************************************************************************************** -->
+
+
+       				 </span>
+                    <header>
+                        <h2>WILLKOMMEN</h2>
+                        <span class="byline">bei Tonstudio K.</span>
+                    </header>
+                </section>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="12u">
+
+
+                <!-- Welcome Text -->
+                <section>
+
+                    <div class="5grid">
+                        <div class="row">
+                            <div class="8u">
+                                <section class="box">
+                                    <h3>
+                                        Tonstudio K ist ein „state-of-the-art“ Tonstudio in Frechen bei Köln, gegründet
+                                        2001 von Tonmeister Thomas Kern.
+                                    </h3>
+                                    <br>
+                                    <p>
+                                        Unser Team bietet Ihnen professionellen Service. Angefangen bei Ihrer Idee bis
+                                        hin zum fertigen Produkt begleiten wir Sie
+                                        mit unserer Erfahrung und unserem Team erfahrener Profis in einer ideal
+                                        abgestimmten Studioumgebung.
+                                        Von hochwertigen Aufnahmen und Abmischungen bis hin zur Komplettproduktion
+                                        bekommen Sie bei uns alles,
+                                        was Sie für eine erfolgreiche Produktion benötigen. Dabei liegt der Fokus nicht
+                                        nur auf einem hohen Qualitätslevel,
+                                        sondern auch in der flexiblen und zeitnahen Realisierung sämtlicher
+                                        Kundenwünsche, die mit dem Projekt verbunden sind.
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="4u">
+                                <section class="box">
+                                    <header>
+                                        <h3>Auf einen Blick</h3>
+                                    </header>
+                                    <ul class="divided">
+                                        <li><a href="preise.html#eigener-song">Ich möchte einen Song aufnehmen - was kostet das?</a></li>
+                                        <li><a href="leistungen.html">Leistungen</a></li>
+                                        <li><a href="preise.html">Aktuelle Preise</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/includes/page-footer.inc.html" -->
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+Options +Includes
+
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .shtml
+AddCharset UTF-8 .html
+
+AddType text/html .shtml
+AddOutputFilter INCLUDES .html
